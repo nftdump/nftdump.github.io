@@ -52,49 +52,7 @@
         <a href="presentations/marttila-2019-CR.html">Slides</a></p>
     </div>
 
-    <script src="javascripts/scale.fix.js"></script>
 
-    <script>
-
-      var myVar = setInterval(vanishingText, 4000);
-      //setTimeout(vanishingText(), 2000);
-      //vanishingText();
-
-      function vanishingText(){
-        var infoText = document.getElementById("vanishingInfo").innerHTML;
-        var vanishingText = infoText.substr(1);
-        console.log(vanishingText);
-        document.getElementById("vanishingInfo").innerHTML = vanishingText;
-        if(document.getElementById("vanishingInfo").innerHTML == ""){
-          clearInterval(myVar);
-        }
-      }
-
-      //document.getElementById("changingWelcome").onmousemove = changingWelcome;
-
-      function changingWelcome(){
-        console.log("Got into changing welcome.");
-        var welcomeText = document.getElementById("welcomeHeader").textContent;
-        console.log("printing textcontent of h1:" + welcomeText);
-        if(welcomeText.includes("stranger")){
-          console.log("Got into changing stranger.");
-          var newWelcomeText = welcomeText.replace("stranger", "friend");
-          console.log("printing textcontent of h1:" + newWelcomeText);
-          document.getElementById("welcomeHeader").textContent = newWelcomeText;
-        }
-        if(welcomeText.includes("friend")){
-          var newWelcomeText = welcomeText.replace("friend", "stranger");
-          console.log(newWelcomeText);
-          document.getElementById("welcomeHeader").textContent = newWelcomeText;
-
-        }
-      }
-
-      function glitchyTerhi(){
-        document.getElementById("glitchyTerhi").textContent = " (((.  -  .)))";
-      }
-
-    </script>
 
 
   </body>
